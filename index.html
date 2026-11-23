@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio numérique et espace personnel d'apprentissage."
+    />
+    <title>My Learning Space | Portfolio numérique</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">&lt;/&gt; MY<b>LEARNING</b>SPACE</a>
+      <nav class="nav">
+        <a href="#home">Accueil</a><a href="#modules">Modules</a
+        ><a href="#about">À propos</a>
+      </nav>
+    </header>
+    <main>
+      <section class="wrap hero" id="home">
+        <div>
+          <div class="eyebrow">MON PORTFOLIO NUMÉRIQUE</div>
+          <h1>Apprendre.<br /><span class="gradient">Créer. Évoluer.</span></h1>
+          <p class="lead">
+            Bienvenue dans mon espace personnel d'apprentissage. Je rassemble
+            ici mes cours, mes résumés et mes résumés, mes lectures audio et mes
+            ressources vidéo autour de la programmation, du développement web et
+            des compétences numériques.
+          </p>
+          <a class="btn" href="#modules">Explorer les modules&nbsp; →</a>
+        </div>
+        <aside class="profile">
+          <img
+            class="profile-photo"
+            src="medias/images/profile.png"
+            alt="Photo de profil"
+          />
+          <h2>Bonjour, moi c'est Assil Derwich !</h2>
+          <p class="muted">
+            Étudiant à ISET de Nabeul · Passionné par la technologie, la
+            programmation
+          </p>
+        </aside>
+      </section>
+      <section class="wrap" id="modules">
+        <div class="eyebrow">MON PARCOURS</div>
+        <h2 class="section-title">Mes <span class="gradient">modules</span></h2>
+        <p class="muted">
+          Choisissez une matière pour ouvrir son espace de cours.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <span class="num">MODULE 01</span>
+            <h3>Développement</h3>
+            <p>Python · Langage C · Algorithmique</p>
+            <ul>
+              <li><a href="developpement/python.html">Python</a></li>
+              <li><a href="developpement/langage-c.html">Langage C</a></li>
+              <li>
+                <a href="developpement/algorithmique.html">Algorithmique</a>
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="num">MODULE 02</span>
+            <h3>Développement Web</h3>
+            <p>HTML · CSS · JavaScript</p>
+            <ul>
+              <li><a href="developpement-web/html.html">HTML</a></li>
+              <li><a href="developpement-web/css.html">CSS</a></li>
+              <li>
+                <a href="developpement-web/javascript.html">JavaScript</a>
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="num">MODULE 03</span>
+            <h3>Systèmes et Fondements</h3>
+            <p>Systèmes d'exploitation · Architecture · Électronique</p>
+            <ul>
+              <li>
+                <a href="systemes/systemes-exploitation.html"
+                  >Systèmes d'exploitation</a
+                >
+              </li>
+              <li>
+                <a href="systemes/architecture-ordinateurs.html"
+                  >Architecture des ordinateurs</a
+                >
+              </li>
+              <li>
+                <a href="systemes/electronique-embarquee.html"
+                  >Électronique embarquée</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="num">MODULE 04</span>
+            <h3>Digital Skills</h3>
+            <p>Cybersécurité · Prompt Engineering · Création de contenu</p>
+            <ul>
+              <li>
+                <a href="digital-skills/cybersecurite.html">Cybersécurité</a>
+              </li>
+              <li>
+                <a href="digital-skills/prompt-engineering.html"
+                  >Prompt Engineering</a
+                >
+              </li>
+              <li>
+                <a href="digital-skills/creation-contenu.html"
+                  >Création de contenu</a
+                >
+              </li>
+            </ul>
+            <a
+              class="btn"
+              style="margin-top: 14px; display: inline-block"
+              href="digital-skills/carte-mentale.html"
+              >Voir la carte mentale ↗</a
+            >
+          </article>
+        </div>
+        <section class="about" id="about">
+          <div class="eyebrow">À PROPOS</div>
+          <h2>Un espace qui évolue avec moi.</h2>
+          <p class="muted">
+            Ce portfolio numérique me permet d'organiser mes apprentissages, de
+            présenter mes centres d'intérêt et de retrouver facilement les
+            ressources de chaque matière. Remplacez ce texte par votre
+            présentation personnelle.
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      © <span id="year"></span> My Learning Space · Conçu pour apprendre à son
+      rythme.
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
